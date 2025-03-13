@@ -1,0 +1,559 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kings Beauty - Premium Hair Products</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <!-- style="width: 400px; height: auto;" -->
+                    <img src="logo.png" alt="Kings Beauty Logo" class="logo-img" >
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#shop-by-category" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <div class="dropdown-menu mega-menu" aria-labelledby="productsDropdown">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h5 class="dropdown-header">Wigs</h5>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">All Wigs</a></li>
+                                                <li><a class="dropdown-item" href="#">Virgin Human Hair Wigs</a></li>
+                                                <li><a class="dropdown-item" href="#">Frontal Wigs</a></li>
+                                                <li><a class="dropdown-item" href="#">T-Part Wigs</a></li>
+                                                <li><a class="dropdown-item" href="#">V-Part Wigs</a></li>
+                                                <li><a class="dropdown-item" href="#">Full Wigs</a></li>
+                                                <li><a class="dropdown-item" href="#">Full Lace Wigs / 360 Lace Wigs</a></li>
+                                                <li><a class="dropdown-item" href="#">Half Wigs</a></li>
+                                                <li><a class="dropdown-item" href="#">5x5 Closure Wigs</a></li>
+                                                <li><a class="dropdown-item" href="#">4x4 Closure Wigs</a></li>
+                                                <li><a class="dropdown-item" href="#">4x6 Closure Wigs</a></li>
+                                                <li><a class="dropdown-item" href="#">Synthetic Wigs</a></li>
+                                                <li><a class="dropdown-item" href="#">Lace Front Wigs</a></li>
+                                                <li><a class="dropdown-item" href="#">Full / Lace Part Wigs</a></li>
+                                                <li><a class="dropdown-item" href="#">Half Wigs</a></li>
+                                                <li><a class="dropdown-item" href="#">Braid Wigs</a></li>
+                                                <li><a class="dropdown-item" href="#">Headband Wigs</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h5 class="dropdown-header">Virgin Hair</h5>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">All Virgin Hair</a></li>
+                                                <li><a class="dropdown-item" href="#">Collections</a></li>
+                                                <li><a class="dropdown-item" href="#">Alistar</a></li>
+                                                <li><a class="dropdown-item" href="#">Bomb Hair</a></li>
+                                                <li><a class="dropdown-item" href="#">Pink Lemon</a></li>
+                                                <li><a class="dropdown-item" href="#">Pristine</a></li>
+                                                <li><a class="dropdown-item" href="#">9A Janeiro</a></li>
+                                                <li><a class="dropdown-item" href="#">9A No Name Brand</a></li>
+                                                <li><a class="dropdown-item" href="#">9A Silver</a></li>
+                                                <li><a class="dropdown-item" href="#">10A Black Mink</a></li>
+                                                <li><a class="dropdown-item" href="#">10A Engage</a></li>
+                                                <li><a class="dropdown-item" href="#">10A Vivace</a></li>
+                                                <li><a class="dropdown-item" href="#">12A Azore</a></li>
+                                                <li><a class="dropdown-item" href="#">13A Green Pack</a></li>
+                                                <li><a class="dropdown-item" href="#">15A Bellatique</a></li>
+                                                <li><a class="dropdown-item" href="#">15A Black Label Raw Hair</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h5 class="dropdown-header">Hair Care</h5>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Hair Products</a></li>
+                                                <li><a class="dropdown-item" href="#">Oil</a></li>
+                                                <li><a class="dropdown-item" href="#">Serum</a></li>
+                                                <li><a class="dropdown-item" href="#">Shampoo</a></li>
+                                                <li><a class="dropdown-item" href="#">Conditioner</a></li>
+                                                <li><a class="dropdown-item" href="#">Deep Conditioner/Masque</a></li>
+                                                <li><a class="dropdown-item" href="#">Moisturizer</a></li>
+                                                <li><a class="dropdown-item" href="#">Texturizer</a></li>
+                                                <li><a class="dropdown-item" href="#">Detangler</a></li>
+                                                <li><a class="dropdown-item" href="#">Wig Spray</a></li>
+                                                <li><a class="dropdown-item" href="#">Scalp Care</a></li>
+                                                <li><a class="dropdown-item" href="#">Hair Growth Aid</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h5 class="dropdown-header">Accessories</h5>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Ponytail / Bun</a></li>
+                                                <li><a class="dropdown-item" href="#">Ponytails</a></li>
+                                                <li><a class="dropdown-item" href="#">Bun Bangs</a></li>
+                                            </ul>
+                                            <div class="menu-featured mt-4">
+                                                <img src="/api/placeholder/200/160" alt="Featured Products" class="img-fluid rounded">
+                                                <div class="mt-2">
+                                                    <h6 class="mb-0">New Arrivals</h6>
+                                                    <a href="#" class="btn-sm btn-link px-0">Shop Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Megamenu.html">Sale</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex ms-lg-4 header-icons">
+                        <!-- <a href="#" class="header-icon"><i class="fas fa-search"></i></a> -->
+                        <!-- <a href="#" class="header-icon"><i class="fas fa-heart"></i></a> -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 d-flex flex-column justify-content-center hero-content">
+                        <h1>Premium Hair Products</h1>
+                        <h2>For Your Perfect Style</h2>
+                        <p>Discover quality wigs, virgin hair, hair care, and accessories at Kings Beauty</p>
+                        <div class="hero-buttons">
+                            <a href="#shop-by-category" class="btn btn-primary">Explore</a>
+                            <a href="about.html" class="btn btn-outline">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 hero-image">
+                        <img src="images/Featured/DesignEsentials.jpg" alt="Kings Beauty Featured Products">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section
+        <section class="benefits-section">
+            <div class="container">
+                <div class="row gx-4 benefits-row">
+                    <div class="col-md-3 benefit-item">
+                        <div class="benefit-icon"><i class="fas fa-truck"></i></div>
+                        <h3>Free Shipping</h3>
+                        <p>On all orders over $100</p>
+                    </div>
+                    <div class="col-md-3 benefit-item">
+                        <div class="benefit-icon"><i class="fas fa-medal"></i></div>
+                        <h3>Premium Quality</h3>
+                        <p>100% authentic products</p>
+                    </div>
+                    <div class="col-md-3 benefit-item">
+                        <div class="benefit-icon"><i class="fas fa-undo"></i></div>
+                        <h3>Easy Returns</h3>
+                        <p>30-day return policy</p>
+                    </div>
+                    <div class="col-md-3 benefit-item">
+                        <div class="benefit-icon"><i class="fas fa-headset"></i></div>
+                        <h3>24/7 Support</h3>
+                        <p>Dedicated customer service</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Categories Section -->
+        <section id="shop-by-category" class="categories-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>View By Category</h2>
+                    <p>Browse our premium hair products collection</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="category-card">
+                            <img src="images/Placeholders/Wigs.jpg" alt="Wigs Category" class="category-image">
+                            <div class="category-overlay">
+                                <h3>Wigs</h3>
+                                <a href="category-wigs.html" class="btn btn-light">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+
+
+                        <div class="category-card">
+                            <img src="images/Placeholders/Weaves.jpg" alt="Virgin Hair Category" class="category-image">
+                            <div class="category-overlay">
+                                <h3>Weaves</h3>
+                                <a href="category-virgin-hair.html" class="btn btn-light">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="category-card">
+                            <img src="images/Placeholders/Braids.jpg" alt="Hair Care Category" class="category-image">
+                            <div class="category-overlay">
+                                <h3>Braids</h3>
+                                <a href="category-hair-care.html" class="btn btn-light">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="category-card">
+                            <img src="images/Placeholders/HairPieces.jpg" alt="Accessories Category" class="category-image">
+                            <div class="category-overlay">
+                                <h3>Hair Pieces</h3>
+                                <a href="category-accessories.html" class="btn btn-light">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="category-card">
+                            <img src="images/Placeholders/HairCare1.jpg" alt="Accessories Category" class="category-image">
+                            <div class="category-overlay">
+                                <h3>Hair Care</h3>
+                                <a href="category-accessories.html" class="btn btn-light">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="category-card">
+                            <img src="images/Placeholders/SkinCare.jpg" alt="Accessories Category" class="category-image">
+                            <div class="category-overlay">
+                                <h3>Skin Care</h3>
+                                <a href="category-accessories.html" class="btn btn-light">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="category-card">
+                            <img src="images/Placeholders/ToolsBrushes.png" alt="Accessories Category" class="category-image">
+                            <div class="category-overlay">
+                                <h3>Tools & Brushes</h3>
+                                <a href="category-accessories.html" class="btn btn-light">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="category-card">
+                            <img src="images/Placeholders/Accessories.jpg" alt="Accessories Category" class="category-image">
+                            <div class="category-overlay">
+                                <h3>Accessories</h3>
+                                <a href="category-accessories.html" class="btn btn-light">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="category-card">
+                            <img src="images/Placeholders/eyelashes.jpg" alt="Accessories Category" class="category-image">
+                            <div class="category-overlay">
+                                <h3>Eyelash</h3>
+                                <a href="category-accessories.html" class="btn btn-light">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section class="featured-products-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Products</h2>
+                    <p>Our most popular styles and products</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="product-card">
+                            <div class="product-badge">New</div>
+                            <img src="/api/placeholder/300/300" alt="Featured Product 1" class="product-image">
+                            <div class="product-actions">
+                                <a href="#" class="product-action-btn"><i class="fas fa-heart"></i></a>
+                                <a href="#" class="product-action-btn"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="#" class="product-action-btn"><i class="fas fa-eye"></i></a>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Brazilian Body Wave Wig</h3>
+                                <div class="product-category">Wigs</div>
+                                <div class="product-price">$199.99</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="product-card">
+                            <div class="product-badge sale-badge">Sale</div>
+                            <img src="/api/placeholder/300/300" alt="Featured Product 2" class="product-image">
+                            <div class="product-actions">
+                                <a href="#" class="product-action-btn"><i class="fas fa-heart"></i></a>
+                                <a href="#" class="product-action-btn"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="#" class="product-action-btn"><i class="fas fa-eye"></i></a>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">10A Peruvian Virgin Hair</h3>
+                                <div class="product-category">Virgin Hair</div>
+                                <div class="product-price"><span class="old-price">$159.99</span> $129.99</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="product-card">
+                            <img src="/api/placeholder/300/300" alt="Featured Product 3" class="product-image">
+                            <div class="product-actions">
+                                <a href="#" class="product-action-btn"><i class="fas fa-heart"></i></a>
+                                <a href="#" class="product-action-btn"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="#" class="product-action-btn"><i class="fas fa-eye"></i></a>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Hydrating Hair Oil Treatment</h3>
+                                <div class="product-category">Hair Care</div>
+                                <div class="product-price">$24.99</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="product-card">
+                            <div class="product-badge">Bestseller</div>
+                            <img src="/api/placeholder/300/300" alt="Featured Product 4" class="product-image">
+                            <div class="product-actions">
+                                <a href="#" class="product-action-btn"><i class="fas fa-heart"></i></a>
+                                <a href="#" class="product-action-btn"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="#" class="product-action-btn"><i class="fas fa-eye"></i></a>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Synthetic Ponytail Extension</h3>
+                                <div class="product-category">Accessories</div>
+                                <div class="product-price">$39.99</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <a href="#shop-by-category" class="btn btn-outline-primary">View All Products</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trending Styles Section -->
+        <section class="trending-styles-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Trending Styles</h2>
+                    <p>Get inspired by the latest looks</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="trend-card large">
+                            <img src="/api/placeholder/600/400" alt="Summer Collection" class="trend-image">
+                            <div class="trend-content">
+                                <h3>Summer Collection</h3>
+                                <p>Light, breathable styles perfect for the season</p>
+                                <a href="#" class="btn btn-light">Explore Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-12 mb-4">
+                                <div class="trend-card">
+                                    <img src="/api/placeholder/600/200" alt="New Arrivals" class="trend-image">
+                                    <div class="trend-content">
+                                        <h3>New Arrivals</h3>
+                                        <a href="#" class="btn btn-sm btn-light">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="trend-card">
+                                    <img src="/api/placeholder/600/200" alt="Exclusive Deals" class="trend-image">
+                                    <div class="trend-content">
+                                        <h3>Exclusive Deals</h3>
+                                        <a href="#" class="btn btn-sm btn-light">View Offers</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Customer Reviews</h2>
+                    <p>What our customers are saying</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"The quality of the wigs from Kings Beauty is outstanding! I've been a customer for years and have never been disappointed. The hair looks and feels natural, and the customer service is always excellent."</p>
+                            <div class="testimonial-author">
+                                <img src="/api/placeholder/60/60" alt="Customer 1" class="testimonial-avatar">
+                                <div class="testimonial-info">
+                                    <h4>Michelle S.</h4>
+                                    <p>Loyal Customer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"I'm so glad I discovered Kings Beauty! Their virgin hair collections are amazing - the hair is thick, full, and lasts much longer than other brands I've tried. Shipping was fast and the packaging was beautiful."</p>
+                            <div class="testimonial-author">
+                                <img src="/api/placeholder/60/60" alt="Customer 2" class="testimonial-avatar">
+                                <div class="testimonial-info">
+                                    <h4>Jessica T.</h4>
+                                    <p>New Customer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="testimonial-text">"The hair care products from Kings Beauty have completely transformed my hair routine. My wigs last longer and look better than ever. The hydrating oil is now my holy grail product - I won't use anything else!"</p>
+                            <div class="testimonial-author">
+                                <img src="/api/placeholder/60/60" alt="Customer 3" class="testimonial-avatar">
+                                <div class="testimonial-info">
+                                    <h4>Aisha K.</h4>
+                                    <p>Verified Buyer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <h2>Join Our Newsletter</h2>
+                            <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <form class="newsletter-form">
+                                <div class="input-group">
+                                    <input type="email" class="form-control" placeholder="Your email address" required>
+                                    <button class="btn btn-primary" type="submit">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-about">
+                        <img src="logo.png" alt="Kings Beauty Logo" class="footer-logo">
+                        <p class="mt-3">Kings Beauty is your premier destination for high-quality wigs, virgin hair, hair care products, and accessories to keep you looking your best.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#shop-by-category">Shop</a></li>
+                        <li><a href="sale.html">Sale</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-heading">Customer Service</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-heading">Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Main Street, City, State 12345</li>
+                        <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+                        <li><i class="fas fa-envelope"></i> info@kingsbeauty.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9AM-6PM, Sat: 10AM-4PM</li>
+                    </ul>
+                    <div class="payment-methods mt-3">
+                        <img src="/api/placeholder/200/30" alt="Payment Methods">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p class="mb-0">&copy; 2025 Kings Beauty. All rights reserved.</p>
+                        <p class="mb-0">Nikhil Bonala</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

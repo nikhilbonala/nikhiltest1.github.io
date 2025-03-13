@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Products Mega Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        nav {
+            background-color: #333;
+            position: relative;
+        }
+        
+        .main-menu {
+            display: flex;
+            list-style: none;
+        }
+        
+        .main-menu > li {
+            position: relative;
+        }
+        
+        .main-menu > li > a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .main-menu > li:hover > a {
+            background-color: #444;
+        }
+        
+        .mega-menu {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            display: none;
+            z-index: 100;
+            padding: 20px;
+            border-top: 3px solid #c65ba7;
+        }
+        
+        .main-menu > li:hover .mega-menu {
+            display: flex;
+        }
+        
+        .mega-menu-container {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .mega-menu-column {
+            flex: 1;
+            padding: 10px 20px;
+        }
+        
+        .mega-menu-section {
+            margin-bottom: 15px;
+        }
+        
+        .mega-menu h3 {
+            color: #c65ba7;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        .mega-menu h4 {
+            color: #555;
+            margin: 10px 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .mega-menu ul {
+            list-style: none;
+        }
+        
+        .mega-menu ul li {
+            padding: 5px 0;
+        }
+        
+        .mega-menu ul li a {
+            color: #666;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+        
+        .mega-menu ul li a:hover {
+            color: #c65ba7;
+        }
+        
+        .menu-item-highlight {
+            background-color: #f9f1f6;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        
+        @media (max-width: 1024px) {
+            .mega-menu-container {
+                flex-wrap: wrap;
+            }
+            
+            .mega-menu-column {
+                flex: 0 0 50%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .mega-menu-column {
+                flex: 0 0 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <nav>
+            <ul class="main-menu">
+                <li>
+                    <a href="#">Wigs</a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-container">
+                            <div class="mega-menu-column">
+                                <div class="mega-menu-section">
+                                    <h3>Wigs</h3>
+                                    <ul>
+                                        <li><a href="#">Human</a></li>
+                                        <li><a href="#">Synthetic</a></li>
+                                        <li><a href="#">Human mix</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <a href="#">Weaves</a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-container">
+                            <div class="mega-menu-column">
+                                <div class="mega-menu-section">
+                                    <h3>Weaves</h3>
+                                    <ul>
+                                        <li><a href="#">Human</a></li>
+                                        <li><a href="#">Synthetic</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <a href="#">Braids</a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-container">
+                            <div class="mega-menu-column">
+                                <div class="mega-menu-section">
+                                    <h3>Braids</h3>
+                                    <ul>
+                                        <li><a href="#">Braiding Hair</a></li>
+                                        <li><a href="#">Crochet Hair</a></li>
+                                        <li><a href="#">Bulk Hair</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <a href="#">Hair Pieces</a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-container">
+                            <div class="mega-menu-column">
+                                <div class="mega-menu-section">
+                                    <h3>Hair Pieces</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Clip-ins</a>
+                                            <ul style="padding-left: 15px; margin-top: 5px;">
+                                                <li><a href="#">Human</a></li>
+                                                <li><a href="#">Synthetic</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">27-pieces</a></li>
+                                        <li><a href="#">Ponytails & Buns</a></li>
+                                        <li><a href="#">Edge Toppers</a></li>
+                                        <li><a href="#">Bang Pieces</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <a href="#">Hair Care</a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-container">
+                            <div class="mega-menu-column">
+                                <div class="mega-menu-section">
+                                    <h3>FOR WOMEN</h3>
+                                    <h4>Hair Products</h4>
+                                    <ul>
+                                        <li><a href="#">Oil</a></li>
+                                        <li><a href="#">Serum</a></li>
+                                        <li><a href="#">Shampoo</a></li>
+                                        <li><a href="#">Conditioner</a></li>
+                                        <li><a href="#">Detangler</a></li>
+                                        <li><a href="#">Moisturizer</a></li>
+                                        <li><a href="#">Hair Masque</a></li>
+                                        <li><a href="#">Texturizer</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="mega-menu-column">
+                                <div class="mega-menu-section">
+                                    <h4>More Hair Products</h4>
+                                    <ul>
+                                        <li><a href="#">Relaxer and Perm</a></li>
+                                        <li><a href="#">Wig Spray</a></li>
+                                        <li><a href="#">Hair Glue</a></li>
+                                        <li><a href="#">Lace Glue and Tape</a></li>
+                                        <li><a href="#">Hair Grease</a></li>
+                                    </ul>
+                                    
+                                    <h4>Styling Products</h4>
+                                    <ul>
+                                        <li><a href="#">Braid Spray</a></li>
+                                        <li><a href="#">Curl Activator</a></li>
+                                        <li><a href="#">Hair Dressing</a></li>
+                                        <li><a href="#">Hair Gel</a></li>
+                                        <li><a href="#">Braiding Gel</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="mega-menu-column">
+                                <div class="mega-menu-section">
+                                    <h4>More Styling Products</h4>
+                                    <ul>
+                                        <li><a href="#">Loc and Twist Gels</a></li>
+                                        <li><a href="#">Edge Control</a></li>
+                                        <li><a href="#">Styling Wax</a></li>
+                                        <li><a href="#">Hair Powder</a></li>
+                                        <li><a href="#">Holding Spray</a></li>
+                                        <li><a href="#">Setting Lotion</a></li>
+                                        <li><a href="#">Mousse</a></li>
+                                        <li><a href="#">Spritz</a></li>
+                                        <li><a href="#">Oil Sheen</a></li>
+                                        <li><a href="#">Thermal Protect</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="mega-menu-column">
+                                <div class="mega-menu-section">
+                                    <h4>Hair Color Products</h4>
+                                    <ul>
+                                        <li><a href="#">Permanent</a></li>
+                                        <li><a href="#">Semi Permanent</a></li>
+                                        <li><a href="#">Hair Bleach</a></li>
+                                        <li><a href="#">Developer</a></li>
+                                        <li><a href="#">Color Wax</a></li>
+                                        <li><a href="#">Hair Color Spray</a></li>
+                                        <li><a href="#">Root Touch-up Spray</a></li>
+                                        <li><a href="#">Lace Tint Spray</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="mega-menu-column">
+                                <div class="mega-menu-section">
+                                    <h3>FOR MEN</h3>
+                                    <h4>Hair & Beard</h4>
+                                    <ul>
+                                        <li><a href="#">Oil</a></li>
+                                        <li><a href="#">Serum</a></li>
+                                        <li><a href="#">Shampoo</a></li>
+                                        <li><a href="#">Conditioner</a></li>
+                                        <li><a href="#">Detangler</a></li>
+                                        <li><a href="#">Moisturizer</a></li>
+                                        <li><a href="#">Texturizer</a></li>
+                                        <li><a href="#">Beard Wash</a></li>
+                                        <li><a href="#">Beard Oil</a></li>
+                                        <li><a href="#">Beard Conditioner</a></li>
+                                        <li><a href="#">Pomades</a></li>
+                                        <li><a href="#">Hair Grease</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <a href="#">Skin Care</a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-container">
+                            <div class="mega-menu-column">
+                                <div class="mega-menu-section">
+                                    <h3>Skin Care</h3>
+                                    <ul>
+                                        <li><a href="#">Soaps</a></li>
+                                        <li><a href="#">Face Cleanser</a></li>
+                                        <li><a href="#">Face Cream</a></li>
+                                        <li><a href="#">Body Lotion</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <a href="#">Tools & Brushes</a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-container">
+                            <div class="mega-menu-column">
+                                <div class="mega-menu-section">
+                                    <h3>Tools and Brushes</h3>
+                                    <ul>
+                                        <li><a href="#">Clippers and Trimmers</a></li>
+                                        <li><a href="#">Blow Dryers</a></li>
+                                        <li><a href="#">Flat Irons</a></li>
+                                        <li><a href="#">Curling Irons</a></li>
+                                        <li><a href="#">Hair Rollers</a></li>
+                                        <li><a href="#">Flexi Rods</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <a href="#">Accessories</a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-container">
+                            <div class="mega-menu-column">
+                                <div class="mega-menu-section">
+                                    <h3>Accessories</h3>
+                                    <ul>
+                                        <li><a href="#">Hair</a></li>
+                                        <li><a href="#">Face</a></li>
+                                        <li><a href="#">Studs and Rings</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <a href="#">Eyelash</a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-container">
+                            <div class="mega-menu-column">
+                                <div class="mega-menu-section">
+                                    <h3>Ruby Kisses</h3>
+                                    <ul>
+                                        <li><a href="#">Individual</a></li>
+                                        <li><a href="#">Lash Strips</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="mega-menu-column">
+                                <div class="mega-menu-section">
+                                    <h3>Broadway</h3>
+                                    <ul>
+                                        <li><a href="#">Individual</a></li>
+                                        <li><a href="#">Lash Strips</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+                        
